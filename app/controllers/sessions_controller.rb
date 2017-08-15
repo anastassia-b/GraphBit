@@ -17,4 +17,8 @@ class SessionsController < ApplicationController
     end
     redirect_to root_path
   end
+
+  def auth_failure
+    redirect_to root_path
+  end
 end
