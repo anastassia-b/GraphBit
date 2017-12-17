@@ -10,16 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170922032740) do
-
-  create_table "datasets", force: :cascade do |t|
-    t.integer "user_id"
-    t.string "title"
-    t.text "data"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_datasets_on_user_id"
-  end
+ActiveRecord::Schema.define(version: 20170814050357) do
 
   create_table "users", force: :cascade do |t|
     t.string "provider", null: false
